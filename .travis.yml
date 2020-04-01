@@ -1,0 +1,5 @@
+language: swift
+osx_image: xcode11.4
+xcode_project: SwiftApp3.xcodeproj
+xcode_scheme: SwiftApp3Tests
+xcode_destination: platform=iOS Simulator,OS=13.3,name=iPhone XR
