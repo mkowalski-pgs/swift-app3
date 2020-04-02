@@ -8,9 +8,19 @@
 
 import SwiftUI
 
+struct ThreeLabels: View {
+    var body: some View {
+        GeometryReader { reader in
+            Text("Hello")
+            Text("World").position(x: reader.size.width/2, y: reader.size.height/2)
+            Text("!!!")
+        }.frame(width: 200, height: 200).background(Color.red)
+    }
+}
+
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        ThreeLabels()
     }
 }
 
